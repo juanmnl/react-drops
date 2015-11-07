@@ -1,10 +1,10 @@
 {
-  "name": "@juanmnl/react-drops",
+  "name": "react-drops",
   "version": "0.0.1",
-  "description": "Drop React.js Components On Your Projects",
+  "description": "Easily Drop React Component Templates on your Project",
   "main": "index.js",
   "bin": {
-    "@juanmnl/react-drops": "droplet.js"
+    "react-drops": "droplet.js"
   },
   "dependencies": {},
   "devDependencies": {},
