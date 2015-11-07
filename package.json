@@ -1,0 +1,24 @@
+{
+  "name": "@juanmnl/react-drops",
+  "version": "0.0.1",
+  "description": "Drop React.js Components On Your Projects",
+  "main": "index.js",
+  "bin": {
+    "@juanmnl/react-drops": "droplet.js"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanmnl/react-drops.git"
+  },
+  "author": "juanmnl <juanmnl@me.com> (http://www.juanmnl.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juanmnl/react-drops/issues"
+  },
+  "homepage": "https://github.com/juanmnl/react-drops#readme"
+}
