@@ -4,9 +4,12 @@
 
 ### Easily drop react component 'templates' from the command-line
 
-Install as a global npm tool  
+Install React Drops  
+
 `npm i -g react-drops`  
 
+
+require?  
 - react
 - sass?
 
@@ -71,21 +74,26 @@ CSS
 
 FUTURE COMMANDS or FLAGS?
 
-- drops [component Name] --props name:string age:number availability:boolean
-		Creates component with parameters (props w/ validation)
-
-- inject [Component] [destination file]
-		Calls component in another file (dest file)  
-
-- clean [Component]  
-    Prompt?
-		Removes Component Files (js & scss)  
-
-- project [AppName] *<small>!not in root folder</small>*
-      Prompt Name [name]
-      mkdir [name]  
-      cd [name]  
-      mkdir app build app/components app/styles  
-      touch app/index.js app/components/App.js   app/styles/app.scss .gitignore webpack.config.js   README.md  
-      npm init -Y    
-      npm i --save react react-dom  
+- `drops [component Name] --props name:string age:number availability:boolean`
+```
+Creates component with parameters (props w/ validation)
+```
+- `inject [Component] [destination file]`
+```
+Calls component in another file (dest file)
+```  
+- `clean [Component]`   
+```
+Prompt?
+Removes Component Files (js & scss)
+```
+- `project [AppName]` *<small>!not in root folder</small>*
+```
+Prompt Name [name]
+mkdir [name]  
+cd [name]  
+mkdir app build app/components app/styles  
+touch app/index.js app/components/App.js   app/styles/app.scss .gitignore webpack.config.js README.md  
+npm init -Y    
+npm i --save react react-dom
+```
