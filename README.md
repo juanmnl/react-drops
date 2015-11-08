@@ -4,19 +4,38 @@
 
 ### Easily drop react component 'templates' from the command-line
 
+Install as a global npm tool  
 `npm i -g react-drops`  
 
-
+- react
+- sass?
 
 ---
-`drops User //generates basic template for a User component`  
+*File structure?*
+```
+- root <-- Project Folder
+  - app/src  <-- Check if app || src ?
+    - components  
+      - User.js <-- Write [name] Component JS  
+    - styles  
+      - User.scss <-- Write [name] Component SCSS  
+
+  - build/dist  
+  - etc...
+```
+---
+#### Commands
+
+**1. drops**
+
+`drops User` //generates basic template for a User component  
 
 basic template:  
   - component: `./app/components/User.js`  
   - style: `./app/styles/User.scss`  
 
 JSX
-```javascript
+```js
 require(./styles/User.scss);
 var React = require('react');
 
@@ -56,4 +75,17 @@ FUTURE COMMANDS or FLAGS?
 		Creates component with parameters (props w/ validation)
 
 - inject [Component] [destination file]
-		Calls component in another file (dest file)
+		Calls component in another file (dest file)  
+
+- clean [Component]  
+    Prompt?
+		Removes Component Files (js & scss)  
+
+- project [AppName] *<small>!not in root folder</small>*
+      Prompt Name [name]
+      mkdir [name]  
+      cd [name]  
+      mkdir app build app/components app/styles  
+      touch app/index.js app/components/App.js   app/styles/app.scss .gitignore webpack.config.js   README.md  
+      npm init -Y    
+      npm i --save react react-dom  
