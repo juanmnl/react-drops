@@ -3,9 +3,11 @@
   "version": "0.0.1",
   "description": "Easily Drop React Component Templates on your Project",
   "bin": {
-    "drop": "bin/droplet.js"
+    "drops": "bin/droplet.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "shelljs": "0.5.3"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
