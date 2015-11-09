@@ -1,4 +1,5 @@
-## ![React-Drops](./logo75.png) React-Drops
+![React-Drops](./logo150.png) 
+## React-Drops
 
 ##### CONCEPT [ *NOT WORKING YET!* ]
 
