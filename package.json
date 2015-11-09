@@ -6,6 +6,7 @@
     "drops": "bin/droplet.js"
   },
   "dependencies": {
+    "inquirer": "0.11.0",
     "shelljs": "0.5.3"
   },
   "devDependencies": {},
