@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Easily Drop React Component Templates on your Project",
   "bin": {
-    "drops": "bin/droplet.js"
+    "drops": "bin/drops.js"
   },
   "dependencies": {
     "inquirer": "0.11.0",

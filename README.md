@@ -1,4 +1,4 @@
-![React-Drops](./logo150.png) 
+![React-Drops](./logo150.png)
 ## React-Drops
 
 ##### CONCEPT [ *NOT WORKING YET!* ]
@@ -18,7 +18,7 @@ require?
 *File structure?*
 ```
 - root <-- Project Folder
-  - app/src  <-- Check if app || src ?
+  - app/src  <-- Check if app || src and subDir components
     - components  
       - User.js <-- Write [name] Component JS  
     - styles  
