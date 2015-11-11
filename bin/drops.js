@@ -7,7 +7,7 @@ var inquirer = require('inquirer');
 
 shell.echo('Preparing reactive fluid');
 setTimeout(function() {
-	shell.echo('\033[34mProcess: Scaning Project for *needed* directories \033[0m');
+	shell.echo('\033[34mScaning Project for the "app/components/" dir structure \033[0m');
 	shell.echo(process.cwd());
 }, 1000)
 
@@ -16,6 +16,7 @@ setTimeout(function() {
 		shell.echo('\033[33mSorry, Drops needs an "app/components" directory structure \033[0m');
 
 		// Create Directories?
+		// Should only run once (normally)
 		var question = [
 			{
 		    type: "confirm",
@@ -32,13 +33,13 @@ setTimeout(function() {
 				shell.exec('tree app/');
 
 			} else {
-				shell.echo('Oh \033[34m:(\033[0m Bye, bye!');
+				shell.echo('Oh, ok. \033[34m:(\033[0m Bye, bye!');
 				shell.exit(1);
 			}
 		})
 	} else {
-		shell.exec('ls -l'); // Highlight dir if possible
-		shell.echo('\033[32mSuccess: "app/components" Found! \033[0m');
+		shell.exec('tree app/'); // Highlight dir if possible
+		shell.echo('\033[32mAwesome! "app/components" found! \033[0m');
 
 		// Create COMPONENT files
 		//// app/components/component.js
