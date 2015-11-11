@@ -1,6 +1,6 @@
 {
   "name": "react-drops",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Easily Drop React Component Templates on your Project",
   "bin": {
     "drops": "bin/drops.js"
