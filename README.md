@@ -38,25 +38,36 @@ basic template:
   - component: `./app/components/User.js`  
   - style: `./app/styles/User.scss`  
 
-JSX
+  Class component es6
+  ```js
+  import React from 'react';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div className="app">
+        <h1>Main Component</h1>
+      </div>
+    )
+  }
+}
+export default User;
+  ```
+
+JSX Function component es6
 ```js
-require(./styles/User.scss);
-var React = require('react');
+import(./styles/User.scss);
+import React from 'react';
 
-var User = React.createClass({
-	getInitialState: function() {
-		return {};
-	},
-	render: function() {
-		return (
-			<div className="user">
-				<h1>User Component</h1>
-			</div>
-		)
-	}
-})
+const User = (props) => {
+	return (
+		<div className="user">
+			<h1>{props.user}</h1>
+		</div>
+	)
+}
 
-module.exports = User;
+export default User;
 ```
 
 CSS
@@ -70,8 +81,7 @@ CSS
 
 **TODO**
 
-1. ES6 flag or config?  
-2. Add Commands
+1. Add Commands
 
 FUTURE COMMANDS or FLAGS?
 
