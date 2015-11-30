@@ -38,8 +38,9 @@ basic template:
   - component: `./app/components/User.js`  
   - style: `./app/styles/User.scss`  
 
-  Class component es6
-  ```js
+
+Class component es6
+```js
   import React from 'react';
 
 class App extends React.Component {
