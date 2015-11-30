@@ -19,9 +19,9 @@ setTimeout(function() {
     // Should only run once (normally)
     var question = [
       {
-        type: "confirm",
-        name: "createDirs",
-        message: "Do you want to create them?",
+        type: 'confirm',
+        name: 'createDirs',
+        message: 'Do you want to create them?',
         default: true
       }
     ]
@@ -29,8 +29,8 @@ setTimeout(function() {
       if (answer.createDirs !== false) {
         shell.echo('Creating dirs...');
         shell.exec('mkdir app && mkdir app/components');
-        shell.echo('\033[32mDirectories created \033[0m')
-        shell.exec('tree app/');
+        shell.echo('\033[32mDirectories created \033[0m');
+        // shell.exec('ls && ls app/');
 
       } else {
         shell.echo('Oh, ok. \033[34m:(\033[0m Bye, bye!');
@@ -38,7 +38,7 @@ setTimeout(function() {
       }
     })
   } else {
-    shell.exec('tree app/'); // Highlight dir if possible
+    // shell.exec('ls && ls app/'); // Highlight dir if possible
     shell.echo('\033[32mAwesome! "app/components" found! \033[0m');
 
     // Create COMPONENT files
