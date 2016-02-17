@@ -25,7 +25,7 @@ Install React Drops
 ```js
 import React from 'react';
 
-const User = React.createClass( {
+const User = React.createClass({
   render() {
     return (
       <div className="app">
@@ -68,7 +68,7 @@ const User = (props) => {
 export default User;
 ```  
 
-##### CSS
+##### CSS (future)
 ```css
 .user {
 	color: red;

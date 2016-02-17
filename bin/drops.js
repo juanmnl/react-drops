@@ -12,8 +12,8 @@ setTimeout(function() {
 }, 1000)
 
 setTimeout(function() {
-  if (!shell.test('-e', 'app/components')) {
-    shell.echo('\033[33mSorry, Drops needs an "app/components" directory structure \033[0m');
+  if (!shell.test('-e', 'src/components')) {
+    shell.echo('\033[33mSorry, Drops needs a "src/components" directory structure \033[0m');
 
     // Create Directories?
     // Should only run once (normally)
@@ -28,7 +28,7 @@ setTimeout(function() {
     inquirer.prompt(question, function(answer) {
       if (answer.createDirs !== false) {
         shell.echo('Creating dirs...');
-        shell.exec('mkdir app && mkdir app/components');
+        shell.exec('mkdir app && mkdir src/components');
         shell.echo('\033[32mDirectories created \033[0m');
         // shell.exec('ls && ls app/');
 
