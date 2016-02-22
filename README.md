@@ -17,8 +17,8 @@ Install React Drops
 `drops User` //generates basic template for a User component  
 
 #### Basic template:  
-  - component: `./app/components/User.js`  
-  - styles: `./app/styles/User.css`  
+- component: `./app/components/User.js`  
+- styles: `./app/styles/User.css`  
 
 
 ##### CreateClass component (es6)
@@ -29,7 +29,7 @@ const User = React.createClass({
   render() {
     return (
       <div className="app">
-        <h1>Main Component</h1>
+      <h1>Main Component</h1>
       </div>
     );
   }
@@ -45,7 +45,7 @@ class User extends React.Component {
   render() {
     return (
       <div className="app">
-        <h1>Main Component</h1>
+      <h1>Main Component</h1>
       </div>
     )
   }
@@ -59,11 +59,11 @@ import(./styles/User.scss);
 import React from 'react';
 
 const User = (props) => {
-	return (
-		<div className="user">
-			<h1>{props.user}</h1>
-		</div>
-	)
+  return (
+    <div className="user">
+    <h1>{props.user}</h1>
+    </div>
+  )
 }
 export default User;
 ```  
@@ -71,7 +71,7 @@ export default User;
 ##### CSS (future)
 ```css
 .user {
-	color: red;
+  color: red;
 }
 ```
 
